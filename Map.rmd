@@ -1,0 +1,15 @@
+---
+title: "Map"
+author: "HK"
+date: "31/05/2020"
+output: html_document
+---
+
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=21.190769, lng= 72.794006, popup="My Home Location")
+my_map
+
+```
